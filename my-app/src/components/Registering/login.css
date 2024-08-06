@@ -1,0 +1,129 @@
+.reg-con {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 10%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.reg-con h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.reg-con form {
+    display: flex;
+    flex-direction: column;
+}
+
+.reg-con form div {
+    margin-bottom: 15px;
+}
+
+.reg-con form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.reg-con form input[type="email"],
+.reg-con form input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.reg-con form input[type="email"]:focus,
+.reg-con form input[type="password"]:focus {
+    outline: none;
+    border-color: #66afe9;
+    box-shadow: 0 0 5px #66afe9;
+}
+
+.reg-con form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.reg-con form button[type="button"] {
+    background-color: #f44336;
+}
+
+.reg-con form button:hover {
+    background-color: #45a049;
+}
+
+.reg-con form button[type="button"]:hover {
+    background-color: #d32f2f;
+}
+
+.reg-con form .error-message,
+.reg-con form .success-message {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.reg-con form .error-message {
+    color: #f44336;
+}
+
+.reg-con form .success-message {
+    color: #4CAF50;
+}
+
+.reg-con p {
+    text-align: center;
+    margin-top: 20px;
+    color: #555;
+}
+
+.reg-con p a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.reg-con p a:hover {
+    text-decoration: underline;
+}
+
+.reg-con div.logged-in {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.reg-con div.logged-in button {
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.reg-con div.logged-in p {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .reg-con{
+      position: absolute;
+      z-index: 20000000;
+      margin: 3px;
+     
+    }
+  }

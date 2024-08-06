@@ -1,0 +1,119 @@
+/* Form.css */
+.form-container {
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 600px;
+  }
+  
+  .form-header {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  textarea.form-input {
+    resize: vertical;
+  }
+  
+  .button-group {
+    margin-bottom: 1rem;
+  }
+  
+  .submit-button,
+  .highlight-button,
+  .accent-button {
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .submit-button {
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+  }
+  
+  .submit-button:hover {
+    background-color: #002244; /* Slightly darker Navy Blue */
+  }
+  
+  .highlight-button {
+    background-color: var(--highlight-color);
+    color: #333;
+  }
+  
+  .highlight-button:hover {
+    background-color: #e6c14b; /* Slightly darker Gold */
+  }
+  
+  .accent-button {
+    background-color: var(--accent-color);
+    color: #FFFFFF;
+  }
+  
+  .accent-button:hover {
+    background-color: #66001a; /* Slightly darker Burgundy */
+  }
+  
+  .error-message {
+    color: red;
+    font-weight: bold;
+    display: block;
+    margin-top: 1rem;
+  }
+  
+  .success-message {
+    color: green;
+    font-weight: bold;
+    display: block;
+    margin-top: 1rem;
+  }
+  
+  .submission-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .submission-item {
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 0;
+  }
+  
+  .submission-title {
+    font-size: 1.25rem;
+    color: var(--primary-color);
+  }
+  
+  .attachment-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .attachment-list li {
+    margin-bottom: 0.5rem;
+  }
+  

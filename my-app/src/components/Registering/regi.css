@@ -1,0 +1,98 @@
+/* regi.css */
+
+.login-container {
+  height: 100vh;
+  width: 100%;
+  background-color: #f0f0f0;
+  overflow-y: scroll;
+}
+
+.reg-con {
+  margin-top: 20px;
+  max-width: 400px;
+  width: 100%;
+  
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.reg-con h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.reg-con form {
+  display: flex;
+  flex-direction: column;
+}
+
+.reg-con form div {
+  margin-bottom: 15px;
+}
+
+.reg-con form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.reg-con form input[type="text"],
+.reg-con form input[type="email"],
+.reg-con form input[type="password"] {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box; /* Ensures padding doesn't add to width */
+}
+
+.reg-con form input[type="text"]:focus,
+.reg-con form input[type="email"]:focus,
+.reg-con form input[type="password"]:focus {
+  outline: none;
+  border-color: #66afe9;
+  box-shadow: 0 0 5px #66afe9;
+}
+
+.reg-con form button {
+  padding: 12px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.reg-con form button:hover {
+  background-color: #45a049;
+}
+
+.reg-con form .error-message {
+  display: block;
+  margin-top: 5px;
+  font-size: 14px;
+  color: #f44336;
+}
+
+.reg-con p {
+  text-align: center;
+  margin-top: 20px;
+  color: #555;
+}
+
+.reg-con p a {
+  color: #4CAF50;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.reg-con p a:hover {
+  text-decoration: underline;
+}
+

@@ -1,0 +1,216 @@
+/* Basic Reset and Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+/* Font Styling */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+p, a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+}
+
+small {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+/* Color Palette */
+:root {
+  --links-color: white; /* Navy Blue */
+  --primary-color: #003366; /* Navy Blue */
+  --secondary-color: #004d00; /* Deep Green */
+  --accent-color: #800020; /* Burgundy */
+  --highlight-color: #FFD700; /* Gold */
+  --text-color: #333333; /* Dark Gray for text */
+  --background-color: #F5F5F5; /* Light Gray background */
+  --border-color: #C0C0C0; /* Silver for borders */
+  --text-muted: #666666; /* Light Gray for muted text */
+}
+
+/* Links */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+a:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+a:visited {
+  color: wheat;
+}
+
+a:focus {
+  outline: 2px solid var(--highlight-color);
+  outline-offset: 2px;
+}
+
+/* Buttons */
+button {
+  font-family: 'Roboto', sans-serif;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.primary-button {
+  background-color: var(--primary-color);
+  color: #FFFFFF;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+}
+
+.primary-button:hover {
+  background-color: #002244; /* Slightly darker Navy Blue */
+}
+
+.secondary-button {
+  background-color: var(--secondary-color);
+  color: #FFFFFF;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+}
+
+.secondary-button:hover {
+  background-color: #003300; /* Slightly darker Deep Green */
+}
+
+.accent-button {
+  background-color: var(--accent-color);
+  color: #FFFFFF;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+}
+
+.accent-button:hover {
+  background-color: #66001a; /* Slightly darker Burgundy */
+}
+
+.highlight-button {
+  background-color: var(--highlight-color);
+  color: #333;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+}
+
+.highlight-button:hover {
+  background-color: #e6c14b; /* Slightly darker Gold */
+}
+
+.small-button {
+  background-color: var(--highlight-color);
+  color: #333;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
+
+.small-button:hover {
+  background-color: #e6c14b; /* Slightly darker Gold */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+      font-size: 2rem;
+  }
+
+  h2 {
+      font-size: 1.75rem;
+  }
+
+  h3 {
+      font-size: 1.5rem;
+  }
+
+  h4 {
+      font-size: 1.25rem;
+  }
+
+  p, a {
+      font-size: 0.875rem;
+  }
+
+  button {
+      font-size: 0.875rem;
+  }
+
+  .primary-button, .secondary-button, .accent-button, .highlight-button, .small-button {
+      padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+      font-size: 1.75rem;
+  }
+
+  h2 {
+      font-size: 1.5rem;
+  }
+
+  h3 {
+      font-size: 1.25rem;
+  }
+
+  h4 {
+      font-size: 1rem;
+  }
+
+  p, a {
+      font-size: 0.75rem;
+  }
+
+  button {
+      font-size: 0.75rem;
+  }
+
+  .primary-button, .secondary-button, .accent-button, .highlight-button, .small-button {
+      padding: 0.5rem 0.75rem;
+  }
+}

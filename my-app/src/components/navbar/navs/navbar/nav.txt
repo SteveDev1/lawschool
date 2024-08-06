@@ -1,0 +1,270 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container-fluid  pb-3 d-flex">
+    <a class="navbar-brand" href="#"><h1>TrendWear</h1></a> 
+    <div class="collapse navbar-collapse" id="navbarSupportedContent bg-danger">
+      
+        <a class="nav-link" href="/" id="pagesDropdown" role="button">
+            Home
+        </a>
+  
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="womenDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Women
+          </a>
+          <div class="dropdown-menu" aria-labelledby="womenDropdown">
+            <a class="dropdown-item" href="/men">Clothing</a>
+            <a class="dropdown-item" href="#">Shoes</a>
+            <a class="dropdown-item" href="#">Accessories</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="menDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Men
+          </a>
+          <div class="dropdown-menu" aria-labelledby="menDropdown">
+            <a class="dropdown-item" href="/All">Clothing</a>
+            <a class="dropdown-item" href="#">Shoes</a>
+            <a class="dropdown-item" href="#">Accessories</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="kidsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Kids
+          </a>
+          <div class="dropdown-menu" aria-labelledby="kidsDropdown">
+            <a class="dropdown-item" href="#">Boys</a>
+            <a class="dropdown-item" href="#">Girls</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Pages
+          </a>
+          <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+            <a class="dropdown-item" href="#">About Us</a>
+            <a class="dropdown-item" href="#">Contact Us</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/men" id="pagesDropdown" role="button">
+              All
+          </a>
+      </li>
+      
+        
+      </ul>
+      
+      
+      <form id="searchForm" class="form-inline my-2 my-lg-0 ml-3">
+        <input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+
+      <ul class="navbar-nav d-none d-lg-flex">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Language
+          </a>
+          <div class="dropdown-menu" aria-labelledby="languageDropdown">
+            <a class="dropdown-item" href="#">English</a>
+            <a class="dropdown-item" href="#">Spanish</a>
+            <a class="dropdown-item" href="#">French</a>
+            <!-- Add more language options as needed -->
+          </div>
+        </li>
+      </ul>
+
+     
+
+      <!-- Language Dropdown (visible on smaller screens) -->
+     
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/register">SignIn</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="cart-icon" onclick="triggerCartClick()">
+             <i class="fa-solid fa-basket-shopping"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+  <a class="nav-link" href="/" id="pagesDropdown" role="button">
+    Home
+</a>
+ 
+  <ul class="sidebar-menu">
+    <li class="dropdown">
+        <a href="#" class="dropdown-toggle">Women</a>
+       
+
+
+      <ul class="dropdown-menu">
+        <li><a href="#">Clothing</a></li>
+        <li><a href="#">Shoes</a></li>
+        <li><a href="#">Accessories</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="" class="dropdown-toggle">Men</a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Clothing</a></li>
+        <li><a href="#">Shoes</a></li>
+        <li><a href="#">Accessories</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle">Kids</a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Boys</a></li>
+        <li><a href="#">Girls</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle">Pages</a>
+      <ul class="dropdown-menu">
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </li>
+  </ul>
+    <a class="nav-link" href="/men" id="pagesDropdown" role="button">
+        All
+    </a>
+
+
+
+<form id="searchForm" class="form-inline my-2 my-lg-0 ml-3">
+  <input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+</form>
+
+<ul class="navbar-nav d-none d-lg-flex">
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Language
+    </a>
+    <div class="dropdown-menu" aria-labelledby="languageDropdown">
+      <a class="dropdown-item" href="#">English</a>
+      <a class="dropdown-item" href="#">Spanish</a>
+      <a class="dropdown-item" href="#">French</a>
+      <!-- Add more language options as needed -->
+    </div>
+  </li>
+</ul>
+
+
+
+<!-- Language Dropdown (visible on smaller screens) -->
+
+<ul class="navbar-nav">
+  <li class="nav-item">
+    <a class="nav-link" href="/register">SignIn</a>
+  </li>
+</ul>
+</div>
+
+
+<div id="main">
+</div>
+
+<div class="navs">
+  <i class="fa fa-bars" aria-hidden="true"  class="openbtn" onclick="openNav()"></i>
+  <i class="fa fa-search" aria-hidden="true"></i>
+  <a  aria-label="Shopping Bag" href="/" >
+    <i class="fa fa-home" aria-hidden="true" href="/"></i>
+  </a>
+
+  <a id="cart-icon" onclick="triggerCartClick()" aria-label="Shopping Bag"  >
+    <i class="fa-solid fa-basket-shopping"></i>
+  </a>
+  <a  aria-label="Shopping Bag" href="/login" >
+    <i class="fa fa-user" aria-hidden="true" href="/login"></i>
+  </a>
+ 
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "350px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+}
+// Function to open dropdown
+function openDropdown(dropdown) {
+  dropdown.querySelector('.dropdown-menu').classList.add('show');
+}
+
+// Function to close dropdown
+function closeDropdown(dropdown) {
+  dropdown.querySelector('.dropdown-menu').classList.remove('show');
+}
+
+// Toggle dropdown
+function toggleDropdown(dropdown) {
+  const menu = dropdown.querySelector('.dropdown-menu');
+  menu.classList.toggle('show');
+}
+
+// Close all dropdowns except the current one
+function closeAllDropdowns(currentDropdown) {
+  const dropdowns = document.querySelectorAll('.dropdown');
+  dropdowns.forEach(dropdown => {
+    if (dropdown !== currentDropdown) {
+      dropdown.querySelector('.dropdown-menu').classList.remove('show');
+    }
+  });
+}
+
+// Event listener for dropdown toggling
+document.querySelectorAll('.dropdown-toggle').forEach(item => {
+  item.addEventListener('click', event => {
+    const dropdown = item.parentElement;
+    toggleDropdown(dropdown);
+    closeAllDropdowns(dropdown);
+    event.preventDefault();
+  });
+});
+
+// Close dropdowns when clicking outside
+window.addEventListener('click', function(event) {
+  const dropdowns = document.querySelectorAll('.dropdown');
+  dropdowns.forEach(dropdown => {
+    if (!dropdown.contains(event.target)) {
+      dropdown.querySelector('.dropdown-menu').classList.remove('show');
+    }
+  });
+});
+
+function triggerCartClick() {
+      const event = new CustomEvent('cartIconClicked');
+      window.dispatchEvent(event);
+    }
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM fully loaded and parsed');
+    const searchForm = document.getElementById('searchForm');
+    const searchInput = document.getElementById('searchInput');
+
+    if (searchForm && searchInput) {
+        console.log('Form and input elements found');
+        searchForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const query = searchInput.value;
+            console.log('Submitting search query:', query);
+            handleSearch(query);
+        });
+    } else {
+        console.error('Form or input element not found');
+    }
+});

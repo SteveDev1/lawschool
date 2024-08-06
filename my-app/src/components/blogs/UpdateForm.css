@@ -1,0 +1,131 @@
+/* UpdateForm.css */
+
+/* Container for the form */
+.update-form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff; /* White background for clean look */
+    border: 1px solid var(--border-color); /* Light gray border */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  /* Form heading */
+  .update-form h1 {
+    font-size: 2rem;
+    color: var(--primary-color); /* Navy Blue for headings */
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--primary-color); /* Underline effect */
+    padding-bottom: 10px;
+  }
+  
+  /* Form labels */
+  .update-form label {
+    font-weight: bold;
+    color: var(--text-color); /* Dark gray for labels */
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  /* Form inputs and textarea */
+  .update-form input[type="text"],
+  .update-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--border-color); /* Light gray border */
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .update-form textarea {
+    resize: vertical;
+  }
+  
+  /* File input */
+  .update-form input[type="file"] {
+    margin-bottom: 15px;
+  }
+  
+  /* Image preview section */
+  .image-preview {
+    margin-top: 20px;
+  }
+  
+  .image-preview img {
+    max-width: 100px;
+    height: auto;
+    margin-right: 10px;
+    border: 1px solid var(--border-color); /* Light gray border */
+    border-radius: 4px;
+  }
+  
+  .remove-button {
+    background-color: var(--accent-color); /* Burgundy for the remove button */
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .remove-button:hover {
+    background-color: #66001a; /* Darker Burgundy on hover */
+  }
+  
+  /* Error messages */
+  .error {
+    color: #d9534f; /* Red for error messages */
+    font-size: 0.875rem;
+    margin-top: 10px;
+  }
+  
+  /* Submit button */
+  .primary-button {
+    background-color: var(--primary-color); /* Navy Blue for primary buttons */
+    color: #ffffff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .primary-button:hover {
+    background-color: #002244; /* Slightly darker Navy Blue on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .update-form {
+      padding: 15px;
+    }
+  
+    .update-form h1 {
+      font-size: 1.5rem;
+    }
+  
+    .primary-button {
+      padding: 0.5rem 1rem;
+      font-size: 0.875rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .update-form {
+      padding: 10px;
+    }
+  
+    .update-form h1 {
+      font-size: 1.25rem;
+    }
+  
+    .primary-button {
+      padding: 0.5rem 0.75rem;
+      font-size: 0.75rem;
+    }
+  }
+  

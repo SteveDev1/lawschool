@@ -1,0 +1,108 @@
+/* Profile Page Styles */
+.edit-profile {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff; /* White background for a clean look */
+    border: 1px solid var(--border-color); /* Light gray border */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .edit-profile h2 {
+    font-size: 2rem;
+    color: var(--primary-color); /* Navy Blue for headings */
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--primary-color); /* Underline effect */
+    padding-bottom: 10px;
+  }
+  
+  .edit-profile form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .profile-image-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+    border: 2px solid var(--border-color); /* Light gray border for image */
+  }
+  
+  .profile-image-container input[type="file"] {
+    font-size: 0.875rem;
+  }
+  
+  .edit-profile label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--text-color); /* Dark gray for labels */
+  }
+  
+  .edit-profile input[type="text"],
+  .edit-profile input[type="email"],
+  .edit-profile input[type="password"],
+  .edit-profile select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--border-color); /* Light gray border */
+    border-radius: 4px;
+    font-size: 1rem;
+    color: var(--text-color);
+  }
+  
+  .edit-profile .error-message {
+    color: #d9534f; /* Red for error messages */
+    font-size: 0.875rem;
+    margin-top: 10px;
+  }
+  
+  .edit-profile .success-message {
+    color: #5bc0de; /* Light blue for success messages */
+    font-size: 0.875rem;
+    margin-top: 10px;
+  }
+  
+  .edit-profile button {
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .edit-profile button:hover {
+    background-color: #002244; /* Slightly darker Navy Blue */
+  }
+  
+  .task-item, .question-item {
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid var(--border-color); /* Light gray border */
+    border-radius: 4px;
+    background-color: #f9f9f9; /* Slightly off-white background */
+  }
+  
+  .task-item p, .question-item p {
+    margin: 5px 0;
+  }
+  
+  .task-item strong, .question-item strong {
+    color: var(--primary-color); /* Navy Blue for strong text */
+  }
+  
+  .edit-profile p {
+    margin: 10px 0;
+  }
+  
